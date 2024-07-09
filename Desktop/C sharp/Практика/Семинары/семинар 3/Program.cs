@@ -1,14 +1,16 @@
 ﻿// Задать массив из N случайных целых чисел (N вводится с клавиатуры)
 // Найти кол-во чисел, которые оканчиваются на 1 и делятся нацело на 7
 
-void Main() 
+void Main()
+{
+
     int arraySize = ReadInt("Введите размер массива: ");
     int[] array = GenerateArray(arraySize, 1,10);
     PrintArray(array);
 
     int[] array2 = GenerateArray(7, 10, 100);
     PrintArray(array2);
-}
+
 
 void PrintArray(int[] arrayForPrint)
 {
@@ -37,5 +39,5 @@ int ReadInt(string msg)
     return Convert.ToInt32(Console.ReadLine());
   
 }
-
+}
 Main(); 
